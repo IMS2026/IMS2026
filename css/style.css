@@ -119,3 +119,117 @@ h1 {
 }
 
 
+/* ===== Grid-based schedule (cleaner, more timetable-like) ===== */
+
+.schedule-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+}
+
+/* tighter grid */
+.schedule-grid {
+  min-width: 980px;
+  display: grid;
+  grid-template-columns: 130px repeat(4, minmax(180px, 1fr));
+  column-gap: 14px;
+  row-gap: 14px;
+}
+
+/* base cell */
+.schedule-grid .cell {
+  border: 1px solid #e2efe7;
+  border-radius: 12px;
+  background: #fff;
+  padding: 12px 14px;
+  line-height: 1.35;
+  color: #1f2933;
+}
+
+/* corner: make it a label, not empty space */
+.schedule-grid .corner {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* day headers: less “big cards”, more header bars */
+.schedule-grid .day-head {
+  background: #eaf6ef;
+  border-color: #d7eadf;
+  text-align: center;
+  font-weight: 700;
+  color: #143524;
+  padding: 14px 10px;
+  border-radius: 14px;
+}
+
+/* time column: compact & label-like */
+.schedule-grid .time {
+  background: #f4fbf8;
+  border-color: #e2efe7;
+  font-weight: 700;
+  color: #2f5d48;
+  text-align: center;
+  white-space: nowrap;
+  padding: 12px 10px;
+}
+.schedule-grid .time {
+  display: flex;
+  align-items: center;     /* وسط عمودی */
+  justify-content: center; /* وسط افقی */
+}
+
+/* slots: reduce height + control wrapping */
+.schedule-grid .slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 72px;              /* smaller = cleaner */
+  padding: 12px 14px;
+}
+
+/* keep text looking consistent */
+.schedule-grid .slot,
+.schedule-grid .time,
+.schedule-grid .day-head {
+  font-size: 1rem;
+}
+
+/* prevent ugly wrapping */
+.schedule-grid .slot {
+  word-break: normal;
+  overflow-wrap: anywhere;       /* if needed, wraps nicely */
+}
+
+.schedule-grid .slot > span {
+  display: inline-block;
+  max-width: 28ch;               /* keeps line breaks consistent */
+}
+
+/* break rows */
+.schedule-grid .break-time {
+  background: #eef8f2;
+  border-color: #dff2e7;
+}
+
+.schedule-grid .break {
+  background: #f1fbf6;
+  border-color: #dff2e7;
+  font-style: italic;
+  color: #2f6b52;
+}
+
+/* evening */
+.schedule-grid .evening {
+  background: #eef7f2;
+  border-color: #dbece2;
+}
+
+/* empty placeholders look intentional */
+.schedule-grid .empty {
+  background: #fbfdfc;
+  border-style: dashed;
+  color: #8aa596;
+}
