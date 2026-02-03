@@ -10,7 +10,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-   <nav class="navbar navbar-expand-lg bg-light py-3 fixed-top">
+<nav class="navbar navbar-expand-lg bg-light py-3 fixed-top">
   <div class="container">
     <a class="navbar-brand" href="https://imstat.org/" target="_blank" rel="noopener">
       <img src="images/ims-logo.png" style="height: 40px;" alt="IMS">
@@ -23,11 +23,11 @@
 
     <div class="collapse navbar-collapse" id="navmenu">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item px-2 py-1">
+        <li class="nav-item">
           <a href="index.html" class="nav-link">Home</a>
         </li>
 
-        <li class="nav-item ">
+        <li class="nav-item">
           <a href="program.html" class="nav-link">Program</a>
         </li>
 
@@ -42,50 +42,50 @@
         <li class="nav-item">
           <a href="partners.html" class="nav-link">Partners</a>
         </li>
+
+        <!-- ✅ Dropdown as a real nav item -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-cta-dd"
+             href="#"
+             role="button"
+             data-bs-toggle="dropdown"
+             data-bs-display="static"
+             aria-expanded="false">
+            Registration &amp; Submission
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li>
+              <a class="dropdown-item"
+                 href="https://imstat.org/shop/2026-ims-annual-meeting/"
+                 target="_blank" rel="noopener">
+                Registration
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item"
+                 href="#"
+                 onclick="event.preventDefault(); showInvitedInfo();">
+                Invited talk submission
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item"
+                 href="https://imstat.org/2026-ims-annual-meeting/contributed-talk-submission/"
+                 target="_blank" rel="noopener">
+                Contributed talk submission
+              </a>
+            </li>
+          </ul>
+        </li>
+
       </ul>
-
-    <div >
-  <div class="dropdown">
-    <a class="nav-link dropdown-toggle nav-cta-dd"
-   href="#"
-   role="button"
-   data-bs-toggle="dropdown"
-   aria-expanded="false">
-  Registration &amp; Submission
-</a>
-
-
-    <ul class="dropdown-menu dropdown-menu-end">
-      <li>
-        <a class="dropdown-item"
-           href="https://imstat.org/shop/2026-ims-annual-meeting/"
-           target="_blank" rel="noopener">
-          Registration
-        </a>
-      </li>
-
-      <li>
-  <a class="dropdown-item"
-     href="#"
-     onclick="event.preventDefault(); showInvitedInfo();">
-    Invited talk submission
-  </a>
-</li>
-
-      <li>
-        <a class="dropdown-item"
-           href="https://imstat.org/2026-ims-annual-meeting/contributed-talk-submission/"
-           target="_blank" rel="noopener">
-          Contributed talk submission
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-      
     </div>
   </div>
 </nav>
+
     
     <section class="bg-light">
       <div class="container-fluid">

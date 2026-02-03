@@ -319,3 +319,15 @@ h1 {
   display: none;
 }
 
+/* Force dropdown to sit under its toggle (desktop) and inline (mobile) */
+
+@media (max-width: 991.98px) {
+  .navbar .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    inset: auto !important;
+    width: 100%;
+    margin-top: .25rem;
+    box-shadow: none;
+  }
+}
