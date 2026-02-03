@@ -10,41 +10,82 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light py-3 fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="https://imstat.org/" target="_blank"><img src="images/ims-logo.png" style="height: 40px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav">
-                <li class="nav-item px-2 py-1">
-                    <a href="index.html" class="nav-link ">Home</a>
-                </li>
-                
-                
-                <li class="nav-item px-2 py-1">
-                    <a href="program.html" class="nav-link ">Program</a>
-                </li>
-                <li class="nav-item px-2 py-1">
-                    <a href="accommodation.html" class="nav-link">Accommodation</a>
-                </li>
-                <li class="nav-item px-2 py-1">
-                    <a href="venue.html" class="nav-link">Venue</a>
-                </li>
-                <li class="nav-item px-2 py-1">
-                    <a href="partners.html" class="nav-link">Partners</a>
-                </li>
-                
-                <li class="nav-item px-2 py-1">
-                    <button type="button" class="btn btn-success" onclick="window.location.href='https://imstat.org/shop/2026-ims-annual-meeting/'">
-                        Register & Submit
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </nav>
+   <nav class="navbar navbar-expand-lg bg-light py-3 fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://imstat.org/" target="_blank" rel="noopener">
+      <img src="images/ims-logo.png" style="height: 40px;" alt="IMS">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+      aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item px-2 py-1">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item ">
+          <a href="program.html" class="nav-link">Program</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="accommodation.html" class="nav-link">Accommodation</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="venue.html" class="nav-link">Venue</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="partners.html" class="nav-link">Partners</a>
+        </li>
+      </ul>
+
+    <div >
+  <div class="dropdown">
+    <a class="nav-link dropdown-toggle nav-cta-dd"
+   href="#"
+   role="button"
+   data-bs-toggle="dropdown"
+   aria-expanded="false">
+  Registration &amp; Submission
+</a>
+
+
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li>
+        <a class="dropdown-item"
+           href="https://imstat.org/shop/2026-ims-annual-meeting/"
+           target="_blank" rel="noopener">
+          Registration
+        </a>
+      </li>
+
+      <li>
+  <a class="dropdown-item"
+     href="#"
+     onclick="event.preventDefault(); showInvitedInfo();">
+    Invited talk submission
+  </a>
+</li>
+
+      <li>
+        <a class="dropdown-item"
+           href="https://imstat.org/2026-ims-annual-meeting/contributed-talk-submission/"
+           target="_blank" rel="noopener">
+          Contributed talk submission
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+      
+    </div>
+  </div>
+</nav>
     
     <section class="bg-light">
       <div class="container-fluid">
@@ -58,12 +99,11 @@
               <p class="fs-6">The scientific program will feature the 2026 Wald Lecture (Tilmann Gneiting), the 
               2026 Blackwell Lecture (to be named) , three 2026 Medallion Lectures (Ian McKeague, Bodhisattva Sen, Jelle Goeman), the IMS Lawrence D. Brown Ph.D.Student Awards, and more than 60 invited and contributed sessions.<br><br>
               Details will be announced here in due course - stay tuned!<br><br>
-              Thank you for the many invited session proposals which we have received and which are currently being evaluated. The evaluation is done according the criteria of importance, novelty, impact and timeliness, and keeping in mind that a good session proposal, although containing talks on a common theme, will be diverse in its outlook and participant line-up.<br><br>
+              Thank you for the many invited session proposals which we have received. Session organizers have been notified, and accepted presenters may now go ahead and register for the conference. Session organizers will soon receive a link for abstract submission and share with presenters in their respective session. Please note that you can only submit your abstract after having registered for the conference.
+<br><br>
 
-              The submission window for invited sessions is now closed, and we will try to get back to you as soon as possible.<br><br>
+              Those whose presentation was not accepted in an <b>invited session</b> may still go ahead, register, and submit their presentation as a <b>contributed talk</b>. Please follow the links on the top right, first registering for the conference, and then submitting title and abstract of your talk.<br><br>
  
-              A call for contributed sessions and talks shall open in early 2026.<br><br>
-
 
 
 
@@ -203,5 +243,10 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script>
+  function showInvitedInfo() {
+    alert('Invited speakers will receive the submission information by email.');
+  }
+</script>
 </body>
 </html>

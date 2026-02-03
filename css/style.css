@@ -233,3 +233,89 @@ h1 {
   border-style: dashed;
   color: #8aa596;
 }
+
+/* Navbar action buttons */
+.nav-actions .btn {
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .nav-actions .btn {
+    padding: 0.35rem 0.55rem;
+    font-size: 0.85rem;
+  }
+}
+
+.nav-actions .btn { white-space: nowrap; }
+
+/* Navbar CTA links (not buttons) */
+
+.nav-cta{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-cta-link{
+  text-decoration: none;
+  color: #2b2b2b;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.25rem 0.1rem;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-cta-link:hover{
+  color: #1f7a52;
+  border-bottom-color: #cfe8dc;
+}
+
+.nav-cta-primary{
+  color: #1f7a52;
+  font-weight: 650;
+  border-bottom-color: #1f7a52;
+}
+
+
+/* Make the dropdown look like a normal nav link (clean) */
+.nav-cta-dd{
+  background: transparent !important;
+  border: none !important;
+  padding: 0.5rem 0.9rem !important;
+  border-radius: 10px;           /* subtle, not pill */
+  font-weight: 600;
+  color: #2b2b2b !important;
+  position: relative;
+}
+
+/* Make "Registration & Submission" dark green */
+.nav-cta-dd{
+  color: #1f7a52 !important;   /* dark green */
+  font-weight: 600;
+}
+.nav-cta-dd:hover{
+  color: #155d3a !important;
+}
+
+/* Dropdown items hover – light green background */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #eef7f2;   /* light green */
+  color: #1f7a52;              /* dark green text */
+}
+
+/* Uniform spacing for navbar items */
+.navbar-nav .nav-link {
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+.nav-cta-dd {
+  padding-left: 0.9rem !important;
+  padding-right: 0.9rem !important;
+}
+/* Remove dropdown arrow from navbar */
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+
