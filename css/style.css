@@ -352,3 +352,43 @@ h1 {
   text-decoration: none;
   white-space: nowrap;
 }
+
+.talk-duration-note{
+  max-width: 760px;
+  margin: 1.25rem auto 3rem auto; /* فاصله از بالا و پایین بیشتر */
+  padding: 14px 22px;
+  background: #ffffff;
+  border: 1px solid #dfe7e2;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.talk-duration-note .duration-kicker{
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2f5d48;
+}
+
+.talk-duration-note p{
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #1f2933;
+}
+
+.talk-duration-note strong{
+  color: #143524;
+  font-weight: 700;
+}
+
+.talk-duration-note .duration-separator{
+  display: inline-block;
+  margin: 0 12px;
+  color: #8aa494;
+  font-weight: 600;
+}
