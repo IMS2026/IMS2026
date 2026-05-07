@@ -392,3 +392,16 @@ h1 {
   color: #8aa494;
   font-weight: 600;
 }
+
+
+.resource-inline-link{
+  color: #143524;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.resource-inline-link:hover{
+  color: #2f5d48;
+  text-decoration: underline;
+}
