@@ -405,3 +405,44 @@ h1 {
   color: #2f5d48;
   text-decoration: underline;
 }
+
+.slides-upload-box{
+  max-width: 760px;
+  margin: 1.5rem auto 3rem auto;
+  padding: 18px 24px;
+  background: #fff8e8;
+  border: 1px solid #f0d98c;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+}
+
+.slides-kicker{
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #8a6500;
+}
+
+.slides-upload-box p{
+  margin-bottom: 12px;
+  color: #1f2933;
+}
+
+.slides-upload-link{
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: #003366;
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.slides-upload-link:hover{
+  transform: translateY(-2px);
+}
